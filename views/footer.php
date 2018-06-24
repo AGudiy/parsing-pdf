@@ -20,5 +20,29 @@
         }, false);
     })();
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $('input[type="checkbox"').click(function () {
+        event.stopPropagation();
+        var colors = $('input[type="checkbox"]:checked').length;
+        if(colors > 2) return false;
+    })
+</script>
+<script>
+    $('input.single-checkbox').parent('span').click(function () {
+        var $chb = $(this).children('input.single-checkbox');
+        if($chb.is(':checked')){
+            $chb.prop('checked', false);
+        }else{
+            var colors = $('input[type="checkbox"]:checked').length;
+            if(colors >= 2) {
+                return false;
+            }else{
+                $chb.prop('checked', true);
+            }
+        }
+    })
+</script>
 </body>
 </html>

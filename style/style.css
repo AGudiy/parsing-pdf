@@ -3,3 +3,58 @@ html,body{
     height: 100%;
 }
 
+.single-checkbox{
+    cursor: pointer;
+}
+
+span{
+    cursor: pointer;
+}
+
+#span-red{
+    background: red;
+}
+
+#span-orange{
+    background: orange;
+}
+
+#span-yellow{
+    background: yellow;
+}
+
+#span-green{
+    background: green;
+}
+
+#span-blue{
+    background: #1a64ff;
+}
+
+#span-blue-1{
+    background: blue;
+}
+
+#span-pink{
+    background: #ff13cb;
+}
+
+#span-purple{
+    background: purple;
+}
+
+#span-brown{
+    background: brown;
+}
+
+#span-gray{
+    background: gray;
+}
+
+#span-while{
+    border: 1px solid silver;
+}
+
+#span-black{
+    background: black;
+}
