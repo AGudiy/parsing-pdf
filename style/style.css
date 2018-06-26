@@ -3,6 +3,8 @@ html,body{
     height: 100%;
 }
 
+
+/* Стили для color_rom  parsing_form.php*/
 .single-checkbox{
     cursor: pointer;
 }
@@ -57,4 +59,23 @@ span{
 
 #span-black{
     background: black;
+}
+
+/* Стили для color_rom  parsing_update.php*/
+
+.background-2{
+    background-color: #721c24;
+    color: white;
+}
+
+input[type="checkbox"] + span.span1 {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.action{
+    border: 2px solid rebeccapurple;
 }

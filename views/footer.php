@@ -23,7 +23,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-    $('input[type="checkbox"').click(function () {
+    $('input[type="checkbox"].single-checkbox').click(function () {
         event.stopPropagation();
         var colors = $('input[type="checkbox"]:checked').length;
         if(colors > 2) return false;
@@ -42,6 +42,11 @@
                 $chb.prop('checked', true);
             }
         }
+    })
+</script>
+<script>
+    $('input.check1').click(function () {
+        $(this).parent().toggleClass('background-2');
     })
 </script>
 </body>
